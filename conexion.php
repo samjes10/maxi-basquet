@@ -1,6 +1,5 @@
 <?php 
 #-*CONEXION PARA LA BASE DE DATOS XAMPP*-
-$url = parse_url(getenv("bd/maxibasquet.sql"));
 $servername = "ec2-44-207-253-50.compute-1.amazonaws.com";
 $database = "d77ac7v76aafrj";
 $username = "wlegllgkonwreq";

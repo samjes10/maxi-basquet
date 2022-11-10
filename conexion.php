@@ -6,5 +6,9 @@ $User = "wlegllgkonwreq";
 $Port = "5432"
 $Password = "9aa04b445e9f2fc1ef632ac242cad2683c45b439e936914e4edc954d5b43787e";
 // Create connection
-$link = new mysqli($servername,$username,$password,$database) or die("Error ".mysql_error($link));
+
+$strCnx = "host=$Host port=$Port dbname=$Database user=$User password=$Password";
+$cnx = pg_connect($strCnx) or die ("Error de conexion. ". pg_last_error());
+echo "Conexion exitosa <hr>";
+
 ?>
